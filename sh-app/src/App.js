@@ -3,6 +3,9 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
+import Counter from './components/Counter';
+import ListDemo from './components/ListDemo';
+import MailBox from './components/Mailbox';
 
 
   const firstName = "shruthi";
@@ -12,8 +15,12 @@ function App() {
     <div className="App">
           <h3>SH-APP</h3>
           <Header uname={firstName} lname={lastName}/>
-          <Main/>
+          {/* <Main/> */}
+          {/* <Counter/>
+          <ListDemo/> */}
+            <MailBox/>
           <Footer/>
+        
     </div>
   );
 }
