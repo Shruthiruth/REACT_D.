@@ -6,6 +6,8 @@ import Main from './components/Main';
 import Counter from './components/Counter';
 import ListDemo from './components/ListDemo';
 import MailBox from './components/Mailbox';
+import LoginForm from './components/LoginForm';
+import FetchAllPost from './components/FetachAllPost';
 
 
   const firstName = "shruthi";
@@ -18,7 +20,9 @@ function App() {
           {/* <Main/> */}
           {/* <Counter/>
           <ListDemo/> */}
-            <MailBox/>
+      {/* <MailBox />
+      <LoginForm /> */}
+        <FetchAllPost/>
           <Footer/>
         
     </div>
