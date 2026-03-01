@@ -6,6 +6,7 @@ import Counter from './components/Counter'
 import FetchAllPost from './components/FetchAllPOst'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Home from './components/Home'
+import PostDetails from './components/PostDetails'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route path='/Counter' element=<Counter/>  > </Route>
              <Route path='/FetchAllPost' element=<FetchAllPost/>  > </Route>
+             <Route path='/PostDetails/:pid' element=<PostDetails/>  > </Route>
             <Route path='/' element=<Home/> ></Route>
           </Routes>
         </Router>
