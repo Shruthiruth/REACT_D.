@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Iphone 13 Pro Max",
+      "price": 150000,
+      "description": "The iPhone 14 Pro Max is the latest flagship smartphone from Apple, featuring a stunning design, powerful performance, and advanced camera capabilities. It boasts a large Super Retina XDR display, A16 Bionic chip for lightning-fast performance, and an improved camera system with ProRAW and ProRes video recording. With its sleek design and cutting-edge features, the iPhone 14 Pro Max is a top choice for tech enthusiasts and Apple fans alike."
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S23 Ultra",
+      "price": 110000,
+      "description": "The Samsung Galaxy S23 Ultra is a high-end smartphone that offers a premium experience with its sleek design, powerful performance, and advanced features. It boasts a large Dynamic AMOLED display, a powerful Exynos 2200 or Snapdragon 8 Gen 1 processor, and an impressive camera system with multiple lenses for stunning photography. With its long-lasting battery and cutting-edge technology, the Galaxy S23 Ultra is a top choice for those seeking a flagship Android device."
+    },
+    {
+      "id": "bbf4",
+      "name": "Dell Laptop",
+      "price": 800,
+      "category": "Electronics",
+      "inStock": true
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
