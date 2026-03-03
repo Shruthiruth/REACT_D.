@@ -7,6 +7,7 @@ import FetchAllPost from './components/FetchAllPOst'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Home from './components/Home'
 import PostDetails from './components/PostDetails'
+import ContactForm from './components/ContactForm'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
             <Route path='/Counter' element=<Counter/>  > </Route>
              <Route path='/FetchAllPost' element=<FetchAllPost/>  > </Route>
              <Route path='/PostDetails/:pid' element=<PostDetails/>  > </Route>
+             <Route path='/ContactForm' element=<ContactForm/>  > </Route>
             <Route path='/' element=<Home/> ></Route>
           </Routes>
         </Router>

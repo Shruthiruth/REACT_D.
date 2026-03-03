@@ -8,6 +8,7 @@ function Home()
     <h3>My home</h3>
     <p><Link to='./Counter'>Counter Link</Link></p>
         <p><Link to='./FetchAllPost'>FetchAllPost Link</Link></p>
+        <p><Link to='./ContactForm'>ContactForm Link</Link></p>
         
     </>
   )
