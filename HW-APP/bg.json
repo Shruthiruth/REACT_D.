@@ -1,0 +1,20 @@
+{
+  "blog": [
+    {
+      "id": "1",
+      "title": "Book Catalog",
+      "content": "A collection of books with details such as title, author, and publication year."
+    },
+    {
+      "id": "2",
+      "title": "Movie Catalog",
+      "content": "A collection of movies with details such as title, director, and release year."
+    },
+    {
+      "id": "fd02",
+      "title": "Home Tour",
+      "content": "it's all about home tour with friends and family"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

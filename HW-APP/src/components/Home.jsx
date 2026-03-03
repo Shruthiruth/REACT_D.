@@ -8,7 +8,9 @@ function Home()
 
             <Link to="/AllProduct">Products Link</Link> <br></br>
 
-            <Link to="/BookList">Book Link</Link>
+            <Link to="/BookList">Book Link</Link> <br></br>
+
+            <Link to="/BlogList">Blog Link</Link>
             
         </>
     )

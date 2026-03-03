@@ -12,6 +12,10 @@ import EditProductForm from './components/Product/EditProductForm'
 import BookList from './components/Book/BookList'
 import BookItem from './components/Book/BookItem'
 import BookForm from './components/Book/BookForm'
+import BlogList from './components/Blog/BlogList'
+import NewBlogPost from './components/Blog/NewBlogPost'
+import BlogPost from './components/Blog/BlogPost'
+import Navigation from './components/Blog/Navigation'
 
 function App() {
    
@@ -19,8 +23,10 @@ function App() {
   return (
     <>
     <div>HW APP</div>
+
+
      
-      <Router>
+      <Router >
         <Routes>
           <Route path='/Cart'  element={<Cart/>} > </Route>
           <Route path='/'  element={<Home/>} > </Route>
@@ -31,6 +37,10 @@ function App() {
           <Route path='/BookList' element={<BookList/>}></Route>
            <Route path='/BookForm' element={<BookForm/>}></Route>
           <Route path='/BookItem/:id' element={<BookItem/>}></Route>
+          <Route path='/BlogList' element={<><Navigation/><BlogList/></>}></Route>
+          <Route path='/NewBlogPost' element={<><Navigation/><NewBlogPost/></>}></Route>
+          <Route path='/BlogPost/:id' element={<><Navigation/><BlogPost/></>}></Route>
+        \
         </Routes>
       </Router>
         
