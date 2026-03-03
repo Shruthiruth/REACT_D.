@@ -1,6 +1,6 @@
 import { useState } from "react"
-// import { addProducts } from "../../API/ProductApi"
-import axios from "axios"
+import { addProducts } from "../../API/ProductApi"
+// import axios from "axios"
 import { useNavigate } from "react-router-dom"
 
 function AddProductForm()
@@ -38,8 +38,8 @@ function AddProductForm()
 
     const addProduct = async( payload)=>{
         try{
-            const resp = await axios.post("http://localhost:5000/products",payload)
-            // const resp = await addProducts(payload)
+            // const resp = await axios.post("http://localhost:5000/products",payload)
+            const resp = await addProducts(payload)
             setForm(resp.data)
         }
         catch(err)

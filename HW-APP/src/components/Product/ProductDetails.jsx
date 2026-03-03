@@ -53,7 +53,7 @@ function ProductDetails() {
                     <p>Category:{product.category}</p>
                     <p>Description:{product.description}</p>
                     <p>
-                        <Link ><button>Edit</button></Link>
+                        <Link to={`/EditProduct/${product.id}`} ><button>Edit</button></Link>
                         <button onClick={handleDelete}>Delete</button>
                     </p>
                 </div>

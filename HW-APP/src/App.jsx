@@ -8,6 +8,10 @@ import Home from './components/Home'
 import FetchAllProduct from './components/Product/FetchAllProduct'
 import ProductDetails from './components/Product/ProductDetails'
 import AddProductForm from './components/Product/AddProductForm'
+import EditProductForm from './components/Product/EditProductForm'
+import BookList from './components/Book/BookList'
+import BookItem from './components/Book/BookItem'
+import BookForm from './components/Book/BookForm'
 
 function App() {
    
@@ -23,6 +27,10 @@ function App() {
           <Route path='/AllProduct' element={<FetchAllProduct/>}></Route>
           <Route path='/PDetails/:id' element={<ProductDetails/>}></Route>
           <Route path='/AddProduct' element={<AddProductForm/>}></Route>
+          <Route path='/EditProduct/:id' element={<EditProductForm/>}></Route>
+          <Route path='/BookList' element={<BookList/>}></Route>
+           <Route path='/BookForm' element={<BookForm/>}></Route>
+          <Route path='/BookItem/:id' element={<BookItem/>}></Route>
         </Routes>
       </Router>
         

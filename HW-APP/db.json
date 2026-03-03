@@ -10,7 +10,7 @@
     {
       "id": "bbf4",
       "name": "Dell Laptop",
-      "price": 800,
+      "price": "8000",
       "category": "Laptop",
       "description": "The Dell XPS 13 is a premium laptop that offers a sleek design, powerful performance, and a stunning display. It features a compact and lightweight build, making it highly portable. The laptop is equipped with the latest Intel processors, ample RAM, and fast storage options, ensuring smooth multitasking and quick responsiveness. With its vibrant InfinityEdge display and long battery life, the Dell XPS 13 is an excellent choice for professionals and students alike.",
       "inStock": true
@@ -20,6 +20,12 @@
       "name": "samsung",
       "price": "55000",
       "category": "Mobile"
+    },
+    {
+      "id": "51ce",
+      "name": "HP",
+      "price": "78000",
+      "category": "Laptop"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

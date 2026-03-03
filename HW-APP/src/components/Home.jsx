@@ -6,7 +6,9 @@ function Home()
         <>
             <Link to="/Cart">Cart Link</Link> <br></br>
 
-            <Link to="/AllProduct">Products Link</Link>
+            <Link to="/AllProduct">Products Link</Link> <br></br>
+
+            <Link to="/BookList">Book Link</Link>
             
         </>
     )
