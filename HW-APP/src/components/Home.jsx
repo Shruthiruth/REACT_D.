@@ -4,7 +4,10 @@ function Home()
 {
     return(
         <>
-            <Link to="/Cart">Cart Link</Link>
+            <Link to="/Cart">Cart Link</Link> <br></br>
+
+            <Link to="/AllProduct">Products Link</Link>
+            
         </>
     )
 }
