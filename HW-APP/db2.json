@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "email": "ruth21@gmail.com",
+      "password": "$2a$10$3c2smMUThErLDELWPf9T5ebA84yebQ9GEFD5YdmO700lGL1C4ZXZO",
+      "name": "ruth",
+      "id": 1
+    },
+    {
+      "email": "babu21@gmail.com",
+      "password": "$2a$10$wrBLoQiOUJbUHOi2INwGvOAvJ9FBmJtvrKqEA0EizxR6nqyL7tVWK",
+      "name": "babu",
+      "id": 2
+    },
+    {
+      "email": "anusha21@gmail.com",
+      "password": "$2a$10$SKTATAbV51pYIgWb2JRh8usVVLgdA9FkGddEKxcIfIvtQ.yHGJbje",
+      "name": "anusha",
+      "id": 3
+    },
+    {
+      "email": "nusha21@gmail.com",
+      "password": "$2a$10$NF/zGJFwE3wub82FXlGpHOL5WfFNJACXSX6WpN5RoSQ1DRj3Y7FBa",
+      "name": "nusha",
+      "id": 4
+    }
+  ]
+}

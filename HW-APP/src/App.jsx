@@ -16,6 +16,12 @@ import BlogList from './components/Blog/BlogList'
 import NewBlogPost from './components/Blog/NewBlogPost'
 import BlogPost from './components/Blog/BlogPost'
 import Navigation from './components/Blog/Navigation'
+import { AuthContext } from '../context/AuthContext'
+import DashBoard from './components/ConsumerContext/DashBoard'
+import SignIn from './components/ConsumerContext/SignIn'
+import { AuthProvider } from '../context/AuthProvider'
+import Navbar from './components/ConsumerContext/Navbar'
+import SignUp from './components/ConsumerContext/SignUp'
 
 function App() {
    
@@ -27,6 +33,9 @@ function App() {
 
      
       <Router >
+     
+      <AuthProvider>
+       <Navbar/>
         <Routes>
           <Route path='/Cart'  element={<Cart/>} > </Route>
           <Route path='/'  element={<Home/>} > </Route>
@@ -40,8 +49,11 @@ function App() {
           <Route path='/BlogList' element={<><Navigation/><BlogList/></>}></Route>
           <Route path='/NewBlogPost' element={<><Navigation/><NewBlogPost/></>}></Route>
           <Route path='/BlogPost/:id' element={<><Navigation/><BlogPost/></>}></Route>
-        \
+          <Route path='/User/DashBaord' element={<DashBoard/>}></Route>
+          <Route path='/Context/SignIn' element={<SignIn/>}></Route>
+          <Route path='/Context/SignUp' element={<SignUp/>}></Route>
         </Routes>
+        </AuthProvider>
       </Router>
         
     </>
