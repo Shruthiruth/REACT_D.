@@ -6,6 +6,9 @@ import './App.css'
 import {Routes,Route} from "react-router-dom"
 import Home from './pages/Home'
 import Counter from './features/counter/Counter'
+import ProductList from './features/product/ProductList'
+import AddForm from './features/product/AddForm'
+import EditForm from './features/product/EditForm'
 
 function App() {
  
@@ -16,6 +19,9 @@ function App() {
   <Routes>
     <Route path='/' element={<Home/>}></Route>
     <Route path='/counter' element={<Counter/>}></Route>
+    <Route path='/product/list' element={<ProductList/>}></Route>
+    <Route path='/product/add' element={<AddForm/>}></Route>
+    <Route path='/product/:id' element={<EditForm/>}></Route>
   </Routes>
  
     </>

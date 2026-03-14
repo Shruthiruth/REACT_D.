@@ -1,0 +1,27 @@
+{
+  "users": [],
+  "products": [
+    {
+      "category": "Mobile",
+      "image": "https://th.bing.com/th/id/OIP.zgKCS_T61aPl0ZKJ0N726AEsCo?w=321&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+      "price": 45004,
+      "name": "One Plus ",
+      "id": 2
+    },
+    {
+      "category": "mobile",
+      "image": "https://th.bing.com/th/id/OIP.pvoFTPkoWbsFDzrGCfTROAHaHa?w=200&h=200&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+      "price": 76587,
+      "name": "Redmi 12 Pro",
+      "id": 3
+    },
+    {
+      "name": "HP",
+      "price": 55000,
+      "image": "https://th.bing.com/th/id/OIP.qNi6cH0wEhyW8tHsI6QomAHaEK?w=193&h=150&c=6&o=7&dpr=1.5&pid=1.7&rm=3",
+      "category": "Laptop",
+      "id": 4
+    }
+  ],
+  "orders": []
+}
