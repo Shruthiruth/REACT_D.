@@ -1,12 +1,13 @@
-import {Link}  from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-function Home()
-{
-    return(
+function Home() {
+    return (
         <>
             <Link to='/counter'>Counter Link</Link> <br></br>
             <Link to='/product/list'>ProductList Link</Link> <br></br>
-                <Link to='/product/add'>Add Product Link</Link> <br></br>
+            <Link to='/product/add'>Add Product Link</Link> <br></br>
+            <Link to='/register'>Register Link</Link> <br></br>
+            <Link to='/login'>Login Link</Link> <br></br>
         </>
     )
 }

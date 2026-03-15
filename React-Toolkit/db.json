@@ -1,13 +1,34 @@
 {
-  "users": [],
-  "products": [
+  "users": [
     {
-      "category": "Mobile",
-      "image": "https://th.bing.com/th/id/OIP.zgKCS_T61aPl0ZKJ0N726AEsCo?w=321&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
-      "price": 45004,
-      "name": "One Plus ",
+      "email": "anu21@gmail.com",
+      "password": "$2a$10$CGBXjhcue1YLJucRZxbC7OtHiIOoUgGeNmuP2tk4/fvso0onAY7he",
+      "name": "anusha",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "email": "ruth@gmail.com",
+      "password": "$2a$10$Vmi/RODRZWMSF523ZP5AEuRs8OfvmYS8H1lYltD7pU5HPRPg9R5Uy",
+      "name": "ruth",
+      "role": "user",
       "id": 2
     },
+    {
+      "email": "aneesh@gmail.com",
+      "password": "$2a$10$cHoLfWl7/L8oKo9sKxWoOeh6OGw6J4YOVosC4wdGJWpaO6zjE3yjS",
+      "name": "aneesh",
+      "id": 3
+    },
+    {
+      "email": "babu@gmail.com",
+      "password": "$2a$10$S0o.4cO0wYWbkVjnl.PywOoDSABswCojO17/hpbJW.s7WHpqo8b5q",
+      "name": "babu",
+      "role": "admin",
+      "id": 4
+    }
+  ],
+  "products": [
     {
       "category": "mobile",
       "image": "https://th.bing.com/th/id/OIP.pvoFTPkoWbsFDzrGCfTROAHaHa?w=200&h=200&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
@@ -21,6 +42,13 @@
       "image": "https://th.bing.com/th/id/OIP.qNi6cH0wEhyW8tHsI6QomAHaEK?w=193&h=150&c=6&o=7&dpr=1.5&pid=1.7&rm=3",
       "category": "Laptop",
       "id": 4
+    },
+    {
+      "category": "Monitor",
+      "image": "https://th.bing.com/th/id/OIP._JQSJyEiWzHlQ8swcZipDgHaGN?w=229&h=183&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+      "price": 924698,
+      "name": "Dell",
+      "id": 5
     }
   ],
   "orders": []
