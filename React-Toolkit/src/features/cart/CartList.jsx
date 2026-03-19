@@ -4,9 +4,9 @@ import { fetchProduct } from "./productSlice"
 import { deleteProduct } from "./productSlice"
 import { Link } from "react-router-dom"
 
-function ProductList() {
+function CartList() {
 
-    const { products, loading, error } = useSelector(state => state.product)
+    const { cartproducts, loading, error } = useSelector(state => state.product)
     const disPatch = useDispatch()
 
     useEffect(() => {
@@ -28,28 +28,24 @@ function ProductList() {
             <h1>Product List</h1>
 
             {
-                products.map(p =>
+                cartproducts.map(p =>
                     <div key={p.id}>
                     <br></br>
                         <h3 style={{ color: "red", fontFamily: "cursive" }}>{p.name}</h3>
                         <p>{p.price}</p>
                         <img src={p.image} alt={p.name} width="200px" height="200px" />
                         <p>{p.category}</p>
-                        <Link to={`/product/${p.id}`}>
-                            <button className="btn btn-warning">Edit</button>
-                        </Link> <br></br> <br></br>
+                        
                        
                         <button className="btn btn-primary" onClick={() => deleteProductHandler(p.id)}>
                             Delete
                         </button>  <br></br> <br></br>
 
-                         <Link to={`/product/${p.id}`}>
-                            <button className="btn btn-success">Add to Cart</button>
-                        </Link>
+                     
 
                     </div>)
             }
         </>
     )
 }
-export default ProductList
+export default CartList
