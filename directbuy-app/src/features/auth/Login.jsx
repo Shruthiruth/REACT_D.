@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../app/AuthProvider";
+import {toast} from 'react-hot-toast'
 
 
 const schema=yup.object({
@@ -24,19 +26,24 @@ function Login()
     })
     const [login,{isLoading,error}]=useLoginMutation()
     const navigate= useNavigate()
+    const {refetch} = useAuth()
     const onlogin=async(data)=>{
         try{
-            await login(data).unwrap()
-            console.log(data)
-            navigate('/dashboard')
+           const resp= await login(data).unwrap()
+            console.log(resp)
+            await refetch()
+            navigate('/')
 
-
+            toast.success('login success')
         }
         catch(err){
             console.error(err)
+            toast.error('login failed')
         }
         reset()
     }   
+
+    if(error?.status === 401) return <h3>Please login to view products</h3>
     return(
         <>
 
@@ -63,7 +70,7 @@ function Login()
                     </div>
                 </div>
             </form>
-            {error && <h4 style={{color:'red'}}>{error.data?.message || "Login failed"}</h4>}
+            {error && <h4 style={{color:'red'}}>{error.data?.message || "something went wrong"}</h4>}
         </>
     )
 }
