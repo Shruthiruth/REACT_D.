@@ -1,9 +1,15 @@
+import { useAuth } from "../app/AuthProvider"
+
 function UserDb() {
-    return (
-        <div>
-            <h1>User Dashboard</h1>
-            <p>Welcome to your User Dashboard. Here you can view your orders, manage your account, and explore our product offerings.</p>
-        </div>
-    )
+    const {data,isLoading} = useAuth()
+   
+       const user= data?.data
+       if(isLoading) return <h4>Loading...</h4>
+       return (
+           <div>
+               <h1>User Dashboard</h1>    
+               <p>Welcome to the User Dashboard. {user?.firstName}</p>
+           </div>
+       )
 }
 export default UserDb
