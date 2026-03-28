@@ -13,34 +13,40 @@ import { AuthProvider } from './app/AuthProvider.jsx'
 import { Toaster } from 'react-hot-toast'
 import NotFound from './pages/NotFound.jsx'
 import HomeRoute from './routes/HomeRoute.jsx'
+import AddProduct from './features/products/AddProduct.jsx'
+import EditProduct from './features/products/EditProduct.jsx'
 function App() {
 
 
   return (
     <>
-    <AuthProvider>
-      <Router>
-        <Navbar />
-        <Toaster position='top-center'  reverseOrder={false} />
-        <Routes>
-        <Route path='/' element={<HomeRoute/>} />
-        <Route path='*' element={<NotFound/>} />
-        
-          <Route path='/products' element={<ProductList />} />
-          <Route path='/products/:id' element={<ProductDetails />} />
-         
-          <Route path='/login' element={<Login />} />
-          <Route path='/admin' element={<AdminDb />} />
-          <Route path='/user' element={<UserDb />} />
-          <Route path='/dashboard' element={
-            <PrivateRoute>
-              <Dashboard />
-            </PrivateRoute>
-          } />
+      <AuthProvider>
+        <Router>
+          <Navbar />
+          <Toaster position='top-center' reverseOrder={false} />
+          <Routes>
+            <Route path='/' element={<HomeRoute />} />
+            <Route path='*' element={<NotFound />} />
 
-          <Route path='/logout' element={<Logout />} />
-        </Routes>
-      </Router>
+            <Route path='/products' element={<ProductList />} />
+            <Route path='/product/:id' element={<ProductDetails />} />
+            <Route path='/product/edit/:id' element={
+              <PrivateRoute role='ADMIN'><EditProduct /></PrivateRoute>} />
+
+            <Route path='/login' element={<Login />} />
+            <Route path='/admin' element={<AdminDb />} />
+            <Route path='/user' element={<UserDb />} />
+            <Route path='/dashboard' element={
+              <PrivateRoute>
+                <Dashboard />
+              </PrivateRoute>
+            } />
+            <Route path='/products/add' element={
+              <PrivateRoute role='ADMIN'><AddProduct /></PrivateRoute>} />
+
+            <Route path='/logout' element={<Logout />} />
+          </Routes>
+        </Router>
       </AuthProvider>
     </>
   )
