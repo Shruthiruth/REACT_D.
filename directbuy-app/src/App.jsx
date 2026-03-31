@@ -15,6 +15,8 @@ import NotFound from './pages/NotFound.jsx'
 import HomeRoute from './routes/HomeRoute.jsx'
 import AddProduct from './features/products/AddProduct.jsx'
 import EditProduct from './features/products/EditProduct.jsx'
+import CartPage from './features/cart/CartPage.jsx'
+import MyOrders from './features/orders/MyOrders.jsx'
 function App() {
 
 
@@ -45,6 +47,18 @@ function App() {
               <PrivateRoute role='ADMIN'><AddProduct /></PrivateRoute>} />
 
             <Route path='/logout' element={<Logout />} />
+            <Route path='/cart' element={
+              <PrivateRoute role='USER'>
+                <CartPage />
+              </PrivateRoute>
+            } />
+
+            <Route path='/orders' element={
+              <PrivateRoute role='USER'>
+                <MyOrders />
+              </PrivateRoute>
+            } />
+
           </Routes>
         </Router>
       </AuthProvider>
