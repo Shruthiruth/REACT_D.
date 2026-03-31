@@ -42,6 +42,14 @@ function Navbar() {
              <li className="nav-item">
               <Link className="nav-link" to='/dashboard'>Dashboard</Link>
             </li>}
+             {user &&
+             <li className="nav-item">
+              <Link className="nav-link" to='/cart'>My Cart</Link>
+            </li>}
+            {user &&
+             <li className="nav-item">
+              <Link className="nav-link" to='/orders'>My Orders</Link>
+            </li>}
            
             {!user && <li className="nav-item">
               <Link className="nav-link" to='/login'>Login</Link>
